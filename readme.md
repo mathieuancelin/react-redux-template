@@ -53,5 +53,5 @@ Dependencies
   * `eslint-config-airbnb` : for ES2015 related rules
   * `eslint-plugin-react` : for React related rules
 
-[1]: https://api.travis-ci.org/mathieuancelin/react-template.svg
-[2]: https://api.travis-ci.org/mathieuancelin/react-template
+[1]: https://api.travis-ci.org/mathieuancelin/react-redux-template.svg
+[2]: https://api.travis-ci.org/mathieuancelin/react-redux-template
