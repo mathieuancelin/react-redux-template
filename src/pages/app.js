@@ -7,17 +7,17 @@ import { SimpleClicker } from '../components/simpleclicker';
 import { configureCounterStore } from '../store';
 import { DevTools } from '../components/devtools';
 
-const store2 = configureCounterStore({ counter: 0 });
-
-console.log(store2);
+const store = configureCounterStore({ counter: 0 });
 
 export const App = React.createClass({
   render() {
     return (
-      <Provider store={{}}>
+      <Provider store={store}>
         <div style={{ display: 'flex', flexDirection: 'column' }}>
+          <Clicker />
           <SimpleClicker />
           <Link to="/about">About</Link>
+          <DevTools />
         </div>
       </Provider>
     );

@@ -7,7 +7,5 @@ const finalCreateStore = compose(
 )(createStore);
 
 export function configureCounterStore(initialState) {
-  console.log(reducers);
-  console.log(initialState);
   return finalCreateStore(reducers, initialState);
 }
