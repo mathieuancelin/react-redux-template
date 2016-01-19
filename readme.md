@@ -31,6 +31,7 @@ Dependencies
   * `babel-cli` : to transform ES2015 code into ES5 code from CLI, uses `.babelrc`
   * `babel-preset-react` : preset to use react with babel 6
   * `babel-preset-es2015` : preset to use ES2015 with babel 6
+  * `babel-preset-react-hmre` : preset to use enable Hot Module Replace for React in dev mode
   * `babel-preset-stage-0` : preset to use ES2015 with experimental features
   * `react-hot-loader` : plugin to hot reload react components
   * `redux-devtools` : some nice tools for debugging redux app with time travel
