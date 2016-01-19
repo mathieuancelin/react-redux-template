@@ -1,0 +1,52 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "React redux application template",
+  "private": true,
+  "main": "lib/main.js",
+  "jsnext:main": "lib/main.js",
+  "scripts": {
+    "lint": "eslint src tests",
+    "test": "NODE_ENV=test mocha --compilers js:babel-core/register tests/index.js",
+    "test:watch": "npm test -- --watch",
+    "test:covtext": "rm -rf ./coverage && NODE_ENV=test babel-node $(npm bin)/isparta cover --report text $(npm bin)/_mocha -- --compilers js:babel-core/register tests/index.js",
+    "test:cov": "rm -rf ./coverage && NODE_ENV=test babel-node $(npm bin)/isparta cover --report html $(npm bin)/_mocha -- --compilers js:babel-core/register tests/index.js",
+    "start": "NODE_ENV=dev webpack-dev-server -d --colors --hot --inline --progress --port 8080",
+    "bundle": "NODE_ENV=production webpack -p --colors --progress",
+    "lib": "rm -rf ./lib && babel src --out-dir lib",
+    "build": "npm run test && npm run test:covtext && npm run lint && npm run lib && npm run bundle"
+  },
+  "author": "Mathieu ANCELIN",
+  "license": "MIT",
+  "dependencies": {
+    "babel-polyfill": "^6.3.14",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "react-redux": "^4.0.6",
+    "react-router": "^2.0.0-rc5",
+    "redux": "^3.0.5"
+  },
+  "devDependencies": {
+    "babel": "^6.3.26",
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^5.0.0-beta6",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "chai": "^3.4.1",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.15.0",
+    "isparta": "^4.0.0",
+    "jsdom": "^7.2.2",
+    "mocha": "^2.3.4",
+    "react-addons-test-utils": "^0.14.6",
+    "redux-devtools": "^3.0.1",
+    "redux-devtools-dock-monitor": "^1.0.1",
+    "redux-devtools-log-monitor": "^1.0.2",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  }
+}
