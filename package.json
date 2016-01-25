@@ -4,7 +4,7 @@
   "description": "React redux application template",
   "private": true,
   "main": "lib/main.js",
-  "jsnext:main": "lib/main.js",
+  "jsnext:main": "src/main.js",
   "scripts": {
     "lint": "eslint src tests",
     "test": "NODE_ENV=test mocha --compilers js:babel-core/register tests/index.js",
