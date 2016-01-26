@@ -1,11 +1,11 @@
 import { DevTools } from '../components/devtools';
-import { createStore, compose } from 'redux';
+import { createStore, applyMiddleware, compose } from 'redux';
 import reducers from '../reducers';
 
-const finalCreateStore = compose(
-  DevTools.instrument()
-)(createStore);
-
-export function configureCounterStore(initialState) {
+export function configureCounterStore(initialState, ...middlewares) {
+  const finalCreateStore = compose(
+    applyMiddleware(...middlewares),
+    DevTools.instrument()
+  )(createStore);
   return finalCreateStore(reducers, initialState);
 }
