@@ -15,7 +15,6 @@ export function init() {
   const history = createHistory({ queryKey: false });
   history.__v2_compatible__ = true; // hack for the 2.0 RC
   const middleware = syncHistory(history);
-
   const store = configureCounterStore({ counter: 0 }, middleware);
 
   ReactDOM.render((
