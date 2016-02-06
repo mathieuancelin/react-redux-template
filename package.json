@@ -22,10 +22,10 @@
     "babel-polyfill": "^6.3.14",
     "react": "^0.14.7",
     "react-dom": "^0.14.7",
-    "react-redux": "^4.3.0",
+    "react-redux": "^4.4.0",
     "react-router": "^2.0.0-rc5",
     "react-router-redux": "^3.0.0",
-    "redux": "^3.2.1"
+    "redux": "^3.3.1"
   },
   "devDependencies": {
     "babel": "^6.3.26",
