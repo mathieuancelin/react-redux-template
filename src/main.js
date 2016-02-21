@@ -22,7 +22,7 @@ export function init() {
       <Router history={history}>
         <Route path="/" component={App} />
         <Route path="/yo" component={App} />
-        <Route path="/about" component={About}/>
+        <Route path="/about" component={About} />
         <Route path="*" component={NotFound} />
       </Router>
     </Provider>
