@@ -40,7 +40,7 @@
     "chai": "^3.5.0",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.1.0",
-    "eslint-plugin-react": "^4.2.1",
+    "eslint-plugin-react": "^4.2.2",
     "isparta": "^4.0.0",
     "jsdom": "^8.1.0",
     "mocha": "^2.4.5",
