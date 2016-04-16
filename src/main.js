@@ -1,22 +1,19 @@
 import 'babel-polyfill';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route } from 'react-router';
-import createHistory from 'history/lib/createHashHistory';
+import thunk from 'redux-thunk';
+import { Router, Route, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import { syncHistory } from 'react-router-redux';
+import { syncHistoryWithStore } from 'react-router-redux';
+
 import { configureCounterStore } from './store';
 import { NotFound } from './pages/404';
 import { About } from './pages/about';
 import { App } from './pages/app';
 
 export function init() {
-  // use redux-simple-router ???
-  const history = createHistory({ queryKey: false });
-  history.__v2_compatible__ = true; // hack for the 2.0 RC
-  const middleware = syncHistory(history);
-  const store = configureCounterStore({ counter: 0 }, middleware);
-
+  const store = configureCounterStore({ counter: 0 }, thunk);
+  const history = syncHistoryWithStore(browserHistory, store);
   ReactDOM.render((
     <Provider store={store}>
       <Router history={history}>

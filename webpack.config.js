@@ -37,6 +37,7 @@ module.exports = {
   },
   devServer: {
     contentBase: './public/',
+    historyApiFallback: true,
   },
   entry: [
     './src/main.js' // the main entry point for the build

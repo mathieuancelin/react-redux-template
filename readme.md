@@ -42,6 +42,7 @@ Dependencies
   * `react` : The React ;-)
   * `react-dom` : to use React in an DOM environment
   * `redux`: a predictable state container for JavaScript apps
+  * `redux-thunk`: redux middleware to handle easily async actions with IOC
   * `react-redux`: a bridge to use Redux with React
   * `react-router`: a nice router to build SPA
 * for tests
