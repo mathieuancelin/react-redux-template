@@ -11,8 +11,8 @@ if (process.env.NODE_ENV === 'production') {
   const LogMonitor = require('redux-devtools-log-monitor').default;
   const DockMonitor = require('redux-devtools-dock-monitor').default;
   module.exports = { DevTools: createDevTools(
-     <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q">
-       <LogMonitor theme="solarized" />
-     </DockMonitor>
+    <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q">
+      <LogMonitor theme="solarized" />
+    </DockMonitor>
   ) };
 }
