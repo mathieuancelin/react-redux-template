@@ -14,7 +14,7 @@ import { App } from './pages/app';
 export function init() {
   const store = configureCounterStore({ counter: 0 }, thunk);
   const history = syncHistoryWithStore(browserHistory, store);
-  ReactDOM.render((
+  ReactDOM.render(
     <Provider store={store}>
       <Router history={history}>
         <Route path="/" component={App} />
@@ -23,5 +23,5 @@ export function init() {
         <Route path="*" component={NotFound} />
       </Router>
     </Provider>
-  ), document.getElementById('app'));
+  , document.getElementById('app'));
 }

@@ -16,6 +16,7 @@
     "react/jsx-first-prop-new-line": 0,
     "global-require": 1,
     "no-restricted-syntax": 0,
-    "no-underscore-dangle": 0
+    "no-underscore-dangle": 0,
+    "no-extra-parens": 1
   }
 }
