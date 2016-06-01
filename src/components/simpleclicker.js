@@ -1,20 +1,24 @@
-import React from 'react';
+import React from 'react'
 
 export const SimpleClicker = React.createClass({
-  getInitialState() {
+  getInitialState () {
     return {
-      times: 0,
-    };
+      times: 0
+    }
   },
-  increment() {
-    this.setState({ times: this.state.times + 1 });
+  increment () {
+    this.setState({
+      times: this.state.times + 1
+    })
   },
-  render() {
+  render () {
     return (
       <div>
         <span>You have clicked {this.state.times} times</span>
-        <button onClick={this.increment}>+1</button>
+        <button onClick={this.increment}>
+          +1
+        </button>
       </div>
-    );
-  },
-});
+    )
+  }
+})

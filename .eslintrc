@@ -1,5 +1,5 @@
 {
-  "extends": "eslint-config-airbnb",
+  "extends": ["standard","standard-react"],
   "env": {
     "browser": true,
     "es6": true,

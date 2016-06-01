@@ -1,11 +1,9 @@
-import React from 'react';
+import React from 'react'
 
 export const NotFound = React.createClass({
-  render() {
+  render () {
     return (
-      <h1>
-        Nothing here man !!!
-      </h1>
-    );
-  },
-});
+      <h1>Nothing here man !!!</h1>
+    )
+  }
+})
