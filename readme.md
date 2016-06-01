@@ -1,7 +1,12 @@
-react-redux-template
+my-react-app
 ==============
 
 [![build status][1]][2]
+
+[![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](https://github.com/feross/standard)
 
 This is a project template using React, Redux, React Router and Redux Devtools that you can use to bootstrap your own projects. Everything is already setup for dev, test and linting. This project is using ES2015 syntax with the help of Babel 6.
 
